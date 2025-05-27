@@ -9,7 +9,7 @@ In this module the filepath is set as the default and is not required to be
 passed to the module from within the main program. In order to access the 
 list information the user must assign the results to var1
 '''
-FILEPATH = "/Users/david/Desktop/Python Course/"
+FILEPATH = "./"
 
 def openFileRead(file_path=FILEPATH):
     with open(file_path + 'tasks.txt', 'r') as read_file:
