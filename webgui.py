@@ -34,7 +34,7 @@ def taskPage():
                   on_change=addNewTask, 
                   key='new_task')
     
-    st.session_state
+    # st.session_state
 
 if __name__ == "__main__":
     taskPage()
