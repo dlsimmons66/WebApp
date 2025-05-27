@@ -2,6 +2,7 @@ import streamlit as st
 import myFunctions as functions
 
 # Global Variables
+st.set_page_config(layout="wide")
 myTasks = functions.openFileRead()
 
 
@@ -18,7 +19,7 @@ def taskPage():
     """ Function/Method explanation goes here """
     st.title("Daily Task List Web App")
     st.subheader("Task List App")
-    st.write("Simple Task List app to improve your productivity.")
+    st.write("<i>Simple Task List app to improve your productivity.<i>", unsafe_allow_html=True)
 
     for index, tasks in enumerate(myTasks):
         checkbox = st.checkbox(tasks, key=tasks)
