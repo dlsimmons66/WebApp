@@ -7,9 +7,9 @@ myTasks = functions.openFileRead()
 
 def addNewTask():
     """ Function/Method explanation goes here """
-    myTask = st.session_state["new_task"]
+    myTask = st.session_state["new_task"] + "\n"
     print(myTask)
-    myTasks.append(myTask) + "\n"
+    myTasks.append(myTask)
     print(myTasks)
     functions.openFileWrite(myTasks)
 
